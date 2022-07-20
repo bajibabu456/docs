@@ -6,12 +6,14 @@ const katex = require('rehype-katex');
 
 module.exports = {
   title: 'Documentation',
-  url: 'https://github.com',
+  url: 'https://bajibabu9.github.com',
   baseUrl: '/docs/',
+  trailingSlash: false,
   onBrokenLinks: 'ignore',
   //onBrokenMarkdownLinks: 'warn',
   organizationName: 'bajibabu9', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
+  deploymentBranch: 'master',
   themes: ['docusaurus-theme-redoc'],
   themeConfig: {
     navbar: {
