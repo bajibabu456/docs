@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Layout from "@theme/Layout";
 
-function Home() {
+export default function Home() {
 
 return (
     <div>

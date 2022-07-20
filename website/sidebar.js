@@ -1,7 +1,6 @@
 const { CellWifi } = require("@material-ui/icons");
     module.exports = {
         docs: [
-         'testOrg/introduction',
           {
             type: 'category',
             label: 'Knowledge Synthesis',
@@ -31,7 +30,7 @@ const { CellWifi } = require("@material-ui/icons");
                   {
                     type: 'category',
                     label: 'Guides',
-                    tems:[
+                    items:[
                       'documents/guides/user-guide',
                       'documents/guides/how-to',
                     ]

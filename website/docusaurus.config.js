@@ -13,13 +13,13 @@ module.exports = {
   //onBrokenMarkdownLinks: 'warn',
   organizationName: 'bajibabu9', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
-  deploymentBranch: 'master',
   themes: ['docusaurus-theme-redoc'],
   themeConfig: {
     navbar: {
       title: ' ︱ Documentation',
       logo: {
         alt: '404',
+	src: 'https://d33wubrfki0l68.cloudfront.net/c088b7acfcf11100903c44fe44f2f2d7e0f30531/47727/img/docusaurus.svg',
         href: 'https://google.com/',
         target: '_self'
       },
@@ -52,10 +52,13 @@ module.exports = {
           routeBasePath: '/',
           remarkPlugins: [math],
           rehypePlugins: [katex],
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve('./sidebar.js'),
           // Please change this to your repo.
         },
       },
     ],
   ],
+  customFields: {
+    deploymentBranch: 'master',
+  }
 };
